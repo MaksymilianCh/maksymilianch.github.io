@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #111;
+    min-height: 100%;
+}
+
+body {
+    position: static;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 300;
+}
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: opacityanim 5s forwards;
+    text-align: center;
+}
+
+.content h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+.content h1 .subtext {
+    margin-top: 1%;
+    font-size: 50%;
+}
+
+@keyframes opacityanim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content .showafter {
+    opacity: 0;
+    animation: opacityanim 2s forwards 3s;
+}
+
+.content .buttons {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+.button {
+    color: #fff;
+    background-color: hsl(0 0% 3%);
+    border: 2px solid hsl(0, 0%, 100%, 0.190);
+    transition: 0.3s;
+    padding: 5px;
+    width: 75%;
+}
+
+.button:hover {
+    transition: 0.2s;
+    background-color: hsla(0, 0%, 100%, 0.089);
+}
+
+.unstyled-link {
+    color: inherit;
+    text-decoration: none;
+}
